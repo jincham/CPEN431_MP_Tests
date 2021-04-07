@@ -542,7 +542,7 @@ public class TestDriver {
             // args[1] is the student ID
 
             System.out.println("Running tests!");
-            executeM3SmokeTests(args[0], "0", true, true);
+            executeM3SmokeTests(args[0], "0", false, false);
 
             // If you want to execute extended tests then you should
             // run the client from a GCP e2-standard-16 instance at least.
