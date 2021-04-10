@@ -219,7 +219,9 @@ public class KVSClientAPI {
 
 		// Send request
 		byte[] payload = packPayload(request);
-		byte[] recv = rrClient.sendAndReceive(payload);
+        	System.out.println("The request payload is " + payload.length + " bytes long!");
+        	byte[] recv = rrClient.sendAndReceive(payload);
+		System.out.println("The response payload is " + recv.length + " bytes long!");
 
 		request.requestUID = rrClient.getRequestMessageID();
 		rrClient.close();
